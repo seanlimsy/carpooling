@@ -301,6 +301,33 @@ INSERT INTO cp_driver_rates VALUES ('2019-11-12 08:00:00', 'c@both.com', 3);
 INSERT INTO cp_passenger_rates VALUES ('2019-11-12 08:00:00', 'd@both.com', 3);
 INSERT INTO cp_payment VALUES ('2019-11-12 08:00:00', 'd@both.com', 'f', 'cash');
 
+--upcoming
+INSERT INTO cp_advertised_journey VALUES ('a@both.com', 'carplate01', 2, 'south-west', 'north', 10, '2019-11-07 06:00:00', '2019-11-12 12:00:00', '2019-11-12 14:00:00');
+INSERT INTO cp_passenger_bid VALUES ('b@both.com', 'a@both.com', 'carplate01', '2019-11-12 14:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:13:00', 14, 2, TRUE);
+INSERT INTO cp_journey_occurs VALUES ('b@both.com', 'a@both.com', 'carplate01', '2019-11-12 14:00:00', '2030-01-01 00:00:00', NULL, NULL);
+
+INSERT INTO cp_advertised_journey VALUES ('a@both.com', 'carplate01', 2, 'south-west', 'north', 10, '2019-11-07 06:00:00', '2019-11-13 12:00:00', '2019-11-13 14:00:00');
+INSERT INTO cp_passenger_bid VALUES ('b@both.com', 'a@both.com', 'carplate01', '2019-11-13 14:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:13:00', 14, 2, TRUE);
+INSERT INTO cp_journey_occurs VALUES ('b@both.com', 'a@both.com', 'carplate01', '2019-11-13 14:00:00', '2030-01-01 00:00:00', NULL, NULL);
+
+--ocurring
+INSERT INTO cp_advertised_journey VALUES ('a@both.com', 'carplate01', 2, 'south-west', 'north', 10, '2019-11-07 06:00:00', '2019-11-12 11:00:00', '2019-11-12 12:00:00');
+INSERT INTO cp_passenger_bid VALUES ('b@both.com', 'a@both.com', 'carplate01', '2019-11-12 12:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:13:00', 14, 2, TRUE);
+INSERT INTO cp_journey_occurs VALUES ('b@both.com', 'a@both.com', 'carplate01', '2019-11-12 12:00:00', '2019-11-12 12:00:00', NULL, NULL);
+
+--
+INSERT INTO cp_advertised_journey VALUES ('b@both.com', 'carplate01', 2, 'south-west', 'north', 10, '2019-11-07 06:00:00', '2019-11-07 12:00:00', '2019-11-07 14:00:00');
+INSERT INTO cp_passenger_bid VALUES ('a@both.com', 'b@both.com', 'carplate01', '2019-11-07 14:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:13:00', 14, 2, TRUE);
+INSERT INTO cp_journey_occurs VALUES ('a@both.com', 'b@both.com', 'carplate01', '2019-11-07 14:00:00', '2019-11-07 14:00:00', '2019-11-07 15:00:00', NULL);
+
+INSERT INTO cp_advertised_journey VALUES ('b@both.com', 'carplate01', 2, 'south-west', 'north', 1
+0, '2019-11-07 06:00:00', '2019-11-07 12:00:00', '2019-11-08 14:00:00');
+INSERT INTO cp_passenger_bid VALUES ('a@both.com', 'b@both.com', 'carplate01', '2019-11-08 14:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:13:00', 14, 2, TRUE);
+INSERT INTO cp_journey_occurs VALUES ('a@both.com', 'b@both.com', 'carplate01', '2019-11-08 14:00:00', '2019-11-08 14:00:00', '2019-11-08 15:00:00', NULL);
+
+INSERT INTO cp_advertised_journey VALUES ('c@both.com', 'carplate01', 2, 'south-west', 'north', 10, '2019-11-07 06:00:00', '2019-11-13 12:00:00', '2019-11-13 14:00:00');
+
+
 --haven't been won yet
 INSERT INTO cp_passenger_bid VALUES ('a@both.com', 'e@both.com', 'carplate01', '2019-11-13 06:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:13:00', 14, 2, NULL);
 INSERT INTO cp_passenger_bid VALUES ('b@both.com', 'e@both.com', 'carplate01', '2019-11-13 06:00:00', 'pickupAddress', 'dropoffAddress', '2019-11-07 06:52:00', 14, 2, NULL);
